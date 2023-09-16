@@ -9,7 +9,8 @@
  */
 
 import path from 'node:path';
-import { execaSync } from 'execa';
+import execaPkg from 'execa';
+const { execaSync } = execaPkg;
 
 /** Custom error thrown when git is not found in `PATH`. */
 class GitNotFoundError extends Error {}
